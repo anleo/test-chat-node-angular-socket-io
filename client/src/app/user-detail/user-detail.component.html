@@ -1,0 +1,8 @@
+<mat-card>
+  <h1
+    [ngClass]="{you: yourUser?.id === user?.id}"
+    (dblclick)="setUser(user?.name)"
+  >{{user?.name}} <span *ngIf="yourUser?.id === user?.id">(you)</span></h1>
+</mat-card>
+
+

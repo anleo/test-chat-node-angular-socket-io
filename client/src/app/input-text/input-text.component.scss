@@ -1,0 +1,25 @@
+$gap: 1em;
+
+:host {
+  padding: $gap;
+  background-color: rgba(#dfdfdf, .3);
+
+  ::ng-deep mat-form-field {
+    width: 100%;
+
+    .mat-form-field-wrapper {
+      padding-bottom: 0;
+
+      .mat-form-field-underline {
+        bottom: 0;
+      }
+    }
+  }
+}
+
+form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 7em;
+  grid-column-gap: 1em;
+}
+

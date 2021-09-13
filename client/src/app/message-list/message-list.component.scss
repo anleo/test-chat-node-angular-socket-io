@@ -1,0 +1,11 @@
+$gap: 1em;
+
+:host {
+  padding: $gap;
+  align-self: stretch;
+  overflow-y: auto;
+
+  ::ng-deep mat-card {
+    margin-bottom: .3em;
+  }
+}

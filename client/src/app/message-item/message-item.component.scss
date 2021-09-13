@@ -1,0 +1,19 @@
+:host {
+
+}
+
+h5 {
+  font-size: .7em;
+  color: #aaa;
+  margin-bottom: .5em;
+}
+
+h3 {
+  font-size: .8em;
+  color: #aaa;
+  margin-bottom: .5em;
+
+  &.you {
+    color: green;
+  }
+}

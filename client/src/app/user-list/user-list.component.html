@@ -1,0 +1,5 @@
+<app-user-detail
+  *ngFor="let user of (users$ | async)"
+  [user]="user"
+  [yourUser]="yourUser"
+></app-user-detail>

@@ -1,0 +1,14 @@
+<ng-container
+  *ngTemplateOutlet="(messages$ | async)?.length ? msgTemplate : empTemplate;">
+</ng-container>
+
+<ng-template #msgTemplate>
+  <app-message-item
+    *ngFor="let message of (messages$ | async);"
+    [message]="message"
+  ></app-message-item>
+</ng-template>
+
+<ng-template #empTemplate>
+  <div class="no-results">No results</div>
+</ng-template>

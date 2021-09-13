@@ -1,0 +1,11 @@
+<mat-card>
+  <h5>{{message?.date | date: 'dd/MM/yyyy'}}</h5>
+
+  <h3
+    [ngClass]="{you: user?.id === message?.user?.id}"
+    (dblclick)="setUser(message?.user?.name)">{{message?.user?.name}}
+    <span *ngIf="user?.id === message?.user?.id"> (you)</span>
+  </h3>
+
+  <p>{{message?.text}}</p>
+</mat-card>
